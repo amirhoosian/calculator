@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Suwannaphum&display=swap');
+
+*{
+    font-family: 'Suwannaphum', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #463333;
+    min-height: 100vh;
+}
+.calculator{
+    position: relative;
+    display: grid;
+}
+
+.calculator .value{
+    grid-column: span 4;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: right;
+    border: none;
+    outline: none;
+}
+
+
+.calculator span{
+    display: grid;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    place-items: center;
+    background-color: #686d76;
+    border: 1px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+    user-select:none;
+  margin: 0;
+}
+
+.calculator span:active{
+    background-color: #74ff3b;
+    color: #111;
+}
+
+.calculator span.clear{
+    grid-column: span 2;
+    width: 120px;
+    background-color: #c56183;
+    
+}
+.calculator span.plaus{
+    grid-row: span 2;
+    height: 120px;
+    
+    
+}
+
+.calculator span.equal{
+    background-color: #03b1ff;
+}
